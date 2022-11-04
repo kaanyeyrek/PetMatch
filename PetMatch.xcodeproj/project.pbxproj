@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		488924678528E54E8D8F88C4 /* Pods_PetMatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDB6F14417789E1FEC2842AE /* Pods_PetMatch.framework */; };
 		CE0CF6F9291431B3007097D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0CF6F8291431B3007097D8 /* AppDelegate.swift */; };
 		CE0CF6FB291431B3007097D8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0CF6FA291431B3007097D8 /* SceneDelegate.swift */; };
 		CE0CF6FD291431B3007097D8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0CF6FC291431B3007097D8 /* HomeViewController.swift */; };
@@ -16,9 +17,12 @@
 		CE0CF70F291432A6007097D8 /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0CF70E291432A6007097D8 /* NotificationsViewController.swift */; };
 		CE0CF711291432EE007097D8 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0CF710291432EE007097D8 /* ProfileViewController.swift */; };
 		CE0CF71329143337007097D8 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0CF71229143337007097D8 /* MessagesViewController.swift */; };
+		CE59127F291505FE004BE613 /* CardItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE59127E291505FE004BE613 /* CardItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		31095CB641780CA6D13BE57D /* Pods-PetMatch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetMatch.release.xcconfig"; path = "Target Support Files/Pods-PetMatch/Pods-PetMatch.release.xcconfig"; sourceTree = "<group>"; };
+		3B276DC7E34539B7859EF9D3 /* Pods-PetMatch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetMatch.debug.xcconfig"; path = "Target Support Files/Pods-PetMatch/Pods-PetMatch.debug.xcconfig"; sourceTree = "<group>"; };
 		CE0CF6F5291431B3007097D8 /* PetMatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetMatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE0CF6F8291431B3007097D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE0CF6FA291431B3007097D8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -30,6 +34,8 @@
 		CE0CF70E291432A6007097D8 /* NotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
 		CE0CF710291432EE007097D8 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		CE0CF71229143337007097D8 /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
+		CE59127E291505FE004BE613 /* CardItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardItem.swift; sourceTree = "<group>"; };
+		DDB6F14417789E1FEC2842AE /* Pods_PetMatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PetMatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,17 +43,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				488924678528E54E8D8F88C4 /* Pods_PetMatch.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		213B628FB3E6C24C683576AF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DDB6F14417789E1FEC2842AE /* Pods_PetMatch.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C79486165864E370F90553FD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3B276DC7E34539B7859EF9D3 /* Pods-PetMatch.debug.xcconfig */,
+				31095CB641780CA6D13BE57D /* Pods-PetMatch.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		CE0CF6EC291431B3007097D8 = {
 			isa = PBXGroup;
 			children = (
 				CE0CF6F7291431B3007097D8 /* PetMatch */,
 				CE0CF6F6291431B3007097D8 /* Products */,
+				C79486165864E370F90553FD /* Pods */,
+				213B628FB3E6C24C683576AF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,6 +130,7 @@
 		CE0CF71729143AD8007097D8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CE59127E291505FE004BE613 /* CardItem.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -123,9 +150,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE0CF709291431B3007097D8 /* Build configuration list for PBXNativeTarget "PetMatch" */;
 			buildPhases = (
+				B85FDA4D7FD8D23B9A9C7428 /* [CP] Check Pods Manifest.lock */,
 				CE0CF6F1291431B3007097D8 /* Sources */,
 				CE0CF6F2291431B3007097D8 /* Frameworks */,
 				CE0CF6F3291431B3007097D8 /* Resources */,
+				F6C757B05A7E5C257338E2EF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -181,6 +210,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B85FDA4D7FD8D23B9A9C7428 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PetMatch-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6C757B05A7E5C257338E2EF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PetMatch/Pods-PetMatch-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PetMatch/Pods-PetMatch-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PetMatch/Pods-PetMatch-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CE0CF6F1291431B3007097D8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -188,6 +259,7 @@
 			files = (
 				CE0CF711291432EE007097D8 /* ProfileViewController.swift in Sources */,
 				CE0CF71329143337007097D8 /* MessagesViewController.swift in Sources */,
+				CE59127F291505FE004BE613 /* CardItem.swift in Sources */,
 				CE0CF70F291432A6007097D8 /* NotificationsViewController.swift in Sources */,
 				CE0CF70D291431F6007097D8 /* TabBarViewController.swift in Sources */,
 				CE0CF6FD291431B3007097D8 /* HomeViewController.swift in Sources */,
@@ -326,6 +398,7 @@
 		};
 		CE0CF70A291431B3007097D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B276DC7E34539B7859EF9D3 /* Pods-PetMatch.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -353,6 +426,7 @@
 		};
 		CE0CF70B291431B3007097D8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31095CB641780CA6D13BE57D /* Pods-PetMatch.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
