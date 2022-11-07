@@ -17,7 +17,14 @@
 		CE0CF70F291432A6007097D8 /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0CF70E291432A6007097D8 /* NotificationsViewController.swift */; };
 		CE0CF711291432EE007097D8 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0CF710291432EE007097D8 /* ProfileViewController.swift */; };
 		CE0CF71329143337007097D8 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0CF71229143337007097D8 /* MessagesViewController.swift */; };
+		CE0FD2662917BC42003C1CA2 /* NotificationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0FD2652917BC42003C1CA2 /* NotificationModel.swift */; };
+		CE0FD2682917C9E9003C1CA2 /* NotificationsUserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0FD2672917C9E9003C1CA2 /* NotificationsUserTableViewCell.swift */; };
+		CE0FD26A2917D013003C1CA2 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0FD2692917D013003C1CA2 /* Extension.swift */; };
+		CE0FD26D29181C3C003C1CA2 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0FD26C29181C3C003C1CA2 /* DatabaseManager.swift */; };
 		CE59127F291505FE004BE613 /* CardItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE59127E291505FE004BE613 /* CardItem.swift */; };
+		CE7171E42919775F00E22326 /* NotificationsCommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7171E32919775F00E22326 /* NotificationsCommentTableViewCell.swift */; };
+		CE7CDBF42916809500D85435 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7CDBF32916809500D85435 /* CustomButton.swift */; };
+		CEF8CFD629190E310023D61C /* NotificationsPostLikeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF8CFD529190E310023D61C /* NotificationsPostLikeTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,7 +41,14 @@
 		CE0CF70E291432A6007097D8 /* NotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
 		CE0CF710291432EE007097D8 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		CE0CF71229143337007097D8 /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
+		CE0FD2652917BC42003C1CA2 /* NotificationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationModel.swift; sourceTree = "<group>"; };
+		CE0FD2672917C9E9003C1CA2 /* NotificationsUserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsUserTableViewCell.swift; sourceTree = "<group>"; };
+		CE0FD2692917D013003C1CA2 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		CE0FD26C29181C3C003C1CA2 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		CE59127E291505FE004BE613 /* CardItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardItem.swift; sourceTree = "<group>"; };
+		CE7171E32919775F00E22326 /* NotificationsCommentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsCommentTableViewCell.swift; sourceTree = "<group>"; };
+		CE7CDBF32916809500D85435 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		CEF8CFD529190E310023D61C /* NotificationsPostLikeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsPostLikeTableViewCell.swift; sourceTree = "<group>"; };
 		DDB6F14417789E1FEC2842AE /* Pods_PetMatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PetMatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -88,8 +102,9 @@
 		CE0CF6F7291431B3007097D8 /* PetMatch */ = {
 			isa = PBXGroup;
 			children = (
-				CE0CF71729143AD8007097D8 /* Model */,
-				CE0CF71829143AE3007097D8 /* View */,
+				CE0FD26B29181C2B003C1CA2 /* Manager */,
+				CE0CF71729143AD8007097D8 /* Models */,
+				CE0CF71829143AE3007097D8 /* Views */,
 				CE0CF71629143AB6007097D8 /* Controllers */,
 				CE0CF71529143A8D007097D8 /* Resources */,
 				CE0CF706291431B3007097D8 /* Info.plist */,
@@ -115,6 +130,7 @@
 				CE0CF701291431B3007097D8 /* Assets.xcassets */,
 				CE0CF6F8291431B3007097D8 /* AppDelegate.swift */,
 				CE0CF6FA291431B3007097D8 /* SceneDelegate.swift */,
+				CE0FD2692917D013003C1CA2 /* Extension.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -127,20 +143,41 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		CE0CF71729143AD8007097D8 /* Model */ = {
+		CE0CF71729143AD8007097D8 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				CE59127E291505FE004BE613 /* CardItem.swift */,
+				CE0FD2652917BC42003C1CA2 /* NotificationModel.swift */,
 			);
-			path = Model;
+			path = Models;
 			sourceTree = "<group>";
 		};
-		CE0CF71829143AE3007097D8 /* View */ = {
+		CE0CF71829143AE3007097D8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				CE7171E5291982F600E22326 /* NotificationsCustomCell */,
+				CE7CDBF32916809500D85435 /* CustomButton.swift */,
 				CE0CF703291431B3007097D8 /* LaunchScreen.storyboard */,
 			);
-			path = View;
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CE0FD26B29181C2B003C1CA2 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				CE0FD26C29181C3C003C1CA2 /* DatabaseManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		CE7171E5291982F600E22326 /* NotificationsCustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				CE0FD2672917C9E9003C1CA2 /* NotificationsUserTableViewCell.swift */,
+				CEF8CFD529190E310023D61C /* NotificationsPostLikeTableViewCell.swift */,
+				CE7171E32919775F00E22326 /* NotificationsCommentTableViewCell.swift */,
+			);
+			path = NotificationsCustomCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,11 +296,18 @@
 			files = (
 				CE0CF711291432EE007097D8 /* ProfileViewController.swift in Sources */,
 				CE0CF71329143337007097D8 /* MessagesViewController.swift in Sources */,
+				CE0FD26D29181C3C003C1CA2 /* DatabaseManager.swift in Sources */,
+				CEF8CFD629190E310023D61C /* NotificationsPostLikeTableViewCell.swift in Sources */,
+				CE7CDBF42916809500D85435 /* CustomButton.swift in Sources */,
+				CE0FD26A2917D013003C1CA2 /* Extension.swift in Sources */,
 				CE59127F291505FE004BE613 /* CardItem.swift in Sources */,
+				CE7171E42919775F00E22326 /* NotificationsCommentTableViewCell.swift in Sources */,
+				CE0FD2682917C9E9003C1CA2 /* NotificationsUserTableViewCell.swift in Sources */,
 				CE0CF70F291432A6007097D8 /* NotificationsViewController.swift in Sources */,
 				CE0CF70D291431F6007097D8 /* TabBarViewController.swift in Sources */,
 				CE0CF6FD291431B3007097D8 /* HomeViewController.swift in Sources */,
 				CE0CF6F9291431B3007097D8 /* AppDelegate.swift in Sources */,
+				CE0FD2662917BC42003C1CA2 /* NotificationModel.swift in Sources */,
 				CE0CF6FB291431B3007097D8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -411,6 +455,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -439,6 +484,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

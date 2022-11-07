@@ -14,7 +14,6 @@ class ProfileViewController: UIViewController {
         navigationController?.navigationBar.isHidden = true
         view.backgroundColor = .systemBackground
 
-        // Do any additional setup after loading the view.
     }
 
 }

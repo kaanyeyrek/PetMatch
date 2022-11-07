@@ -7,7 +7,7 @@
 
 import Foundation
 import CardSlider
-
+// implement to pod
 struct CardItem: CardSliderItem {
     var image: UIImage
     var rating: Int?
