@@ -17,7 +17,7 @@ class TabBarViewController: UITabBarController {
         let home = HomeViewController()
         let notifications = NotificationsViewController()
         let messages = MessagesViewController()
-        let profile = ProfileViewController()
+        let profile = ProfileViewController(user: UserModel(userName: "victoria", profilePictureURL: nil, identifier: UUID().uuidString))
 
         home.title = "Home"
         notifications.title = "Notifications"

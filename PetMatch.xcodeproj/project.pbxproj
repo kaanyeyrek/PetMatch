@@ -15,15 +15,21 @@
 		CE0CF705291431B3007097D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE0CF703291431B3007097D8 /* LaunchScreen.storyboard */; };
 		CE0CF70D291431F6007097D8 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0CF70C291431F6007097D8 /* TabBarViewController.swift */; };
 		CE0CF70F291432A6007097D8 /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0CF70E291432A6007097D8 /* NotificationsViewController.swift */; };
-		CE0CF711291432EE007097D8 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0CF710291432EE007097D8 /* ProfileViewController.swift */; };
 		CE0CF71329143337007097D8 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0CF71229143337007097D8 /* MessagesViewController.swift */; };
 		CE0FD2662917BC42003C1CA2 /* NotificationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0FD2652917BC42003C1CA2 /* NotificationModel.swift */; };
 		CE0FD2682917C9E9003C1CA2 /* NotificationsUserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0FD2672917C9E9003C1CA2 /* NotificationsUserTableViewCell.swift */; };
 		CE0FD26A2917D013003C1CA2 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0FD2692917D013003C1CA2 /* Extension.swift */; };
 		CE0FD26D29181C3C003C1CA2 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0FD26C29181C3C003C1CA2 /* DatabaseManager.swift */; };
+		CE2808F1291FA52D000BD3DF /* NotificationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2808F0291FA52D000BD3DF /* NotificationsViewModel.swift */; };
 		CE59127F291505FE004BE613 /* CardItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE59127E291505FE004BE613 /* CardItem.swift */; };
+		CE6D5137291A794300FD27F8 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6D5136291A794300FD27F8 /* PostModel.swift */; };
+		CE6D5139291A815B00FD27F8 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6D5138291A815B00FD27F8 /* UserModel.swift */; };
 		CE7171E42919775F00E22326 /* NotificationsCommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7171E32919775F00E22326 /* NotificationsCommentTableViewCell.swift */; };
 		CE7CDBF42916809500D85435 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7CDBF32916809500D85435 /* CustomButton.swift */; };
+		CEA4DF2F291BC950002759F6 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA4DF2E291BC950002759F6 /* ProfileViewController.swift */; };
+		CEDDD06C291AA92300724275 /* ProfileHeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDDD06B291AA92300724275 /* ProfileHeaderCollectionReusableView.swift */; };
+		CEDDD06F291AB8E100724275 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDDD06E291AB8E100724275 /* SettingsViewController.swift */; };
+		CEDDD075291AD6FD00724275 /* PostCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDDD074291AD6FD00724275 /* PostCollectionViewCell.swift */; };
 		CEF8CFD629190E310023D61C /* NotificationsPostLikeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF8CFD529190E310023D61C /* NotificationsPostLikeTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,15 +45,21 @@
 		CE0CF706291431B3007097D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE0CF70C291431F6007097D8 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		CE0CF70E291432A6007097D8 /* NotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
-		CE0CF710291432EE007097D8 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		CE0CF71229143337007097D8 /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
 		CE0FD2652917BC42003C1CA2 /* NotificationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationModel.swift; sourceTree = "<group>"; };
 		CE0FD2672917C9E9003C1CA2 /* NotificationsUserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsUserTableViewCell.swift; sourceTree = "<group>"; };
 		CE0FD2692917D013003C1CA2 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		CE0FD26C29181C3C003C1CA2 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		CE2808F0291FA52D000BD3DF /* NotificationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewModel.swift; sourceTree = "<group>"; };
 		CE59127E291505FE004BE613 /* CardItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardItem.swift; sourceTree = "<group>"; };
+		CE6D5136291A794300FD27F8 /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
+		CE6D5138291A815B00FD27F8 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		CE7171E32919775F00E22326 /* NotificationsCommentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsCommentTableViewCell.swift; sourceTree = "<group>"; };
 		CE7CDBF32916809500D85435 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		CEA4DF2E291BC950002759F6 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		CEDDD06B291AA92300724275 /* ProfileHeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderCollectionReusableView.swift; sourceTree = "<group>"; };
+		CEDDD06E291AB8E100724275 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		CEDDD074291AD6FD00724275 /* PostCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCollectionViewCell.swift; sourceTree = "<group>"; };
 		CEF8CFD529190E310023D61C /* NotificationsPostLikeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsPostLikeTableViewCell.swift; sourceTree = "<group>"; };
 		DDB6F14417789E1FEC2842AE /* Pods_PetMatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PetMatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -117,8 +129,9 @@
 			children = (
 				CE0CF6FC291431B3007097D8 /* HomeViewController.swift */,
 				CE0CF70E291432A6007097D8 /* NotificationsViewController.swift */,
+				CE2808F0291FA52D000BD3DF /* NotificationsViewModel.swift */,
+				CEA4DF2E291BC950002759F6 /* ProfileViewController.swift */,
 				CE0CF71229143337007097D8 /* MessagesViewController.swift */,
-				CE0CF710291432EE007097D8 /* ProfileViewController.swift */,
 				CE0CF70C291431F6007097D8 /* TabBarViewController.swift */,
 			);
 			path = Core;
@@ -138,6 +151,7 @@
 		CE0CF71629143AB6007097D8 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				CEDDD06D291AB8BF00724275 /* Other */,
 				CE0CF7142914333E007097D8 /* Core */,
 			);
 			path = Controllers;
@@ -148,6 +162,8 @@
 			children = (
 				CE59127E291505FE004BE613 /* CardItem.swift */,
 				CE0FD2652917BC42003C1CA2 /* NotificationModel.swift */,
+				CE6D5136291A794300FD27F8 /* PostModel.swift */,
+				CE6D5138291A815B00FD27F8 /* UserModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -155,7 +171,8 @@
 		CE0CF71829143AE3007097D8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				CE7171E5291982F600E22326 /* NotificationsCustomCell */,
+				CE7171E5291982F600E22326 /* Notifications */,
+				CEDDD06A291AA8CF00724275 /* Profile */,
 				CE7CDBF32916809500D85435 /* CustomButton.swift */,
 				CE0CF703291431B3007097D8 /* LaunchScreen.storyboard */,
 			);
@@ -170,14 +187,31 @@
 			path = Manager;
 			sourceTree = "<group>";
 		};
-		CE7171E5291982F600E22326 /* NotificationsCustomCell */ = {
+		CE7171E5291982F600E22326 /* Notifications */ = {
 			isa = PBXGroup;
 			children = (
 				CE0FD2672917C9E9003C1CA2 /* NotificationsUserTableViewCell.swift */,
 				CEF8CFD529190E310023D61C /* NotificationsPostLikeTableViewCell.swift */,
 				CE7171E32919775F00E22326 /* NotificationsCommentTableViewCell.swift */,
 			);
-			path = NotificationsCustomCell;
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		CEDDD06A291AA8CF00724275 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				CEDDD074291AD6FD00724275 /* PostCollectionViewCell.swift */,
+				CEDDD06B291AA92300724275 /* ProfileHeaderCollectionReusableView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		CEDDD06D291AB8BF00724275 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				CEDDD06E291AB8E100724275 /* SettingsViewController.swift */,
+			);
+			path = Other;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,18 +328,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE0CF711291432EE007097D8 /* ProfileViewController.swift in Sources */,
+				CEDDD075291AD6FD00724275 /* PostCollectionViewCell.swift in Sources */,
+				CE6D5137291A794300FD27F8 /* PostModel.swift in Sources */,
+				CEA4DF2F291BC950002759F6 /* ProfileViewController.swift in Sources */,
 				CE0CF71329143337007097D8 /* MessagesViewController.swift in Sources */,
 				CE0FD26D29181C3C003C1CA2 /* DatabaseManager.swift in Sources */,
 				CEF8CFD629190E310023D61C /* NotificationsPostLikeTableViewCell.swift in Sources */,
+				CEDDD06F291AB8E100724275 /* SettingsViewController.swift in Sources */,
 				CE7CDBF42916809500D85435 /* CustomButton.swift in Sources */,
 				CE0FD26A2917D013003C1CA2 /* Extension.swift in Sources */,
 				CE59127F291505FE004BE613 /* CardItem.swift in Sources */,
+				CE6D5139291A815B00FD27F8 /* UserModel.swift in Sources */,
 				CE7171E42919775F00E22326 /* NotificationsCommentTableViewCell.swift in Sources */,
 				CE0FD2682917C9E9003C1CA2 /* NotificationsUserTableViewCell.swift in Sources */,
 				CE0CF70F291432A6007097D8 /* NotificationsViewController.swift in Sources */,
+				CE2808F1291FA52D000BD3DF /* NotificationsViewModel.swift in Sources */,
 				CE0CF70D291431F6007097D8 /* TabBarViewController.swift in Sources */,
 				CE0CF6FD291431B3007097D8 /* HomeViewController.swift in Sources */,
+				CEDDD06C291AA92300724275 /* ProfileHeaderCollectionReusableView.swift in Sources */,
 				CE0CF6F9291431B3007097D8 /* AppDelegate.swift in Sources */,
 				CE0FD2662917BC42003C1CA2 /* NotificationModel.swift in Sources */,
 				CE0CF6FB291431B3007097D8 /* SceneDelegate.swift in Sources */,

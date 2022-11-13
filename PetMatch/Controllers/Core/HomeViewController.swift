@@ -61,7 +61,7 @@ class HomeViewController: UIViewController, CardSliderDataSource {
 
 
     private var data = [CardItem]()
-
+//MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
@@ -151,7 +151,7 @@ class HomeViewController: UIViewController, CardSliderDataSource {
         data.append(CardItem(image: UIImage(named: "dog3")!, rating: nil, title: "Black Pug", subtitle: "2 years old", description: "I want to adopt someone who can take responsibility for the dogs"))
         data.append(CardItem(image: UIImage(named: "dog4")!, rating: nil, title: "Pitbull", subtitle: "10 years old", description: "I want to adopt someone who can take responsibility for the dogs"))
     }
-// CardSlider Methods
+    //MARK: - CardSlider Methods
     func item(for index: Int) -> CardSliderItem {
         return data[index]
     }

@@ -14,6 +14,9 @@ final class DatabaseManager {
     public func getNotifications(completion: @escaping ([Notification]) -> Void) {
         completion(Notification.mockData())
     }
+    public func getPost(for user: UserModel, completion: @escaping ([PostModel]) -> Void) {
+        completion(PostModel.mockModels())
+    }
     
 }
 
