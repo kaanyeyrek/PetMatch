@@ -80,7 +80,7 @@ class NotificationsPostLikeTableViewCell: UITableViewCell {
         label.text = nil
     }
     
-    public func configure(with postFileName: String, model: Notification) {
+    public func configure(with postFileName: String, model: Notifications) {
         postThumbnailImageView.image = UIImage(named: "dog2")
         dateLabel.text = .date(with: model.date)
         label.text = model.text

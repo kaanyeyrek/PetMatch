@@ -8,7 +8,6 @@
 import UIKit
 
 protocol NotificationsInterface: AnyObject {
-    var isDragging: Bool { get }
     func prepareTableView()
     func setupUI()
     func setupLayout()
@@ -16,53 +15,47 @@ protocol NotificationsInterface: AnyObject {
     func beginRefreshing()
     func endRefreshing()
     func reloadData()
-    
-    
 }
+
 class NotificationsViewController: UIViewController {
     public let tableView: UITableView = {
         let table = UITableView()
         table.translatesAutoresizingMaskIntoConstraints = false
         return table
     }()
-  
+
     private lazy var viewModel: NotificationsViewModelInterface = NotificationsViewModel()
-    
-   
-    
-    
-  //MARK: - LifeCycle
-    
+
+    // MARK: - LifeCycle
+
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         viewModel.viewWillAppear()
-        
     }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         viewModel.view = self
         viewModel.viewDidLoad()
-        
-        
-        
     }
-// tableView refresh for data
+//MARK: - Actions
+    // tableView refresh for data
     @objc private func didTapRefresh(_ sender: UIRefreshControl) {
         viewModel.didTapRefresh()
     }
 }
 
+// MARK: - TableView Methods
 
-//MARK: - TableView Methods
 extension NotificationsViewController: UITableViewDelegate, UITableViewDataSource {
-
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         viewModel.numbersOfRowsInSection
     }
-// Notifications Custom Cell
-// -> .userFollow, .postLike, .postComment
+
+    // Notifications Custom Cell
+    // -> .userFollow, .postLike, .postComment
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let model = Notification[indexPath.row]
+        let model = viewModel.getNotifications(at: indexPath)
         switch model.type {
         case let .userFollow(username: userName):
             guard let cell = tableView.dequeueReusableCell(withIdentifier: NotificationsUserTableViewCell.identifier, for: indexPath) as? NotificationsUserTableViewCell else {
@@ -96,13 +89,16 @@ extension NotificationsViewController: UITableViewDelegate, UITableViewDataSourc
         tableView.deselectRow(at: indexPath, animated: true)
         viewModel.didSelectItemAt(at: indexPath)
     }
-// Delete methods
+
+    // Delete methods
     func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         return true
     }
+
     func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
         return .delete
     }
+
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         guard editingStyle == .delete else {
             return
@@ -112,12 +108,8 @@ extension NotificationsViewController: UITableViewDelegate, UITableViewDataSourc
         tableView.reloadData()
     }
 }
-
-
-
-
+//MARK: -  NotificationsInterface Delegate
 extension NotificationsViewController: NotificationsInterface {
-    
     func prepareTableView() {
         tableView.delegate = self
         tableView.dataSource = self
@@ -126,42 +118,41 @@ extension NotificationsViewController: NotificationsInterface {
         tableView.register(NotificationsPostLikeTableViewCell.self, forCellReuseIdentifier: NotificationsPostLikeTableViewCell.identifier)
         tableView.register(NotificationsCommentTableViewCell.self, forCellReuseIdentifier: NotificationsCommentTableViewCell.identifier)
         tableView.reloadData()
-       
+
     }
     func setupUI() {
         navigationController?.navigationBar.isHidden = true
         view.addSubview(tableView)
         view.backgroundColor = .systemBackground
     }
+
     func setupLayout() {
         NSLayoutConstraint.activate([
             tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
             tableView.topAnchor.constraint(equalTo: view.topAnchor),
             tableView.leftAnchor.constraint(equalTo: view.leftAnchor),
             tableView.rightAnchor.constraint(equalTo: view.rightAnchor),
-            
         ])
     }
+// Refresh
     func prepareRefreshControl(with color: UIColor) {
         let control = UIRefreshControl()
         control.tintColor = color
         tableView.refreshControl = control
         control.addTarget(self, action: #selector(didTapRefresh(_:)), for: .valueChanged)
     }
+
     func beginRefreshing() {
         tableView.refreshControl?.beginRefreshing()
     }
-    
+
     func endRefreshing() {
         tableView.refreshControl?.endRefreshing()
     }
-    
+
     func reloadData() {
         tableView.reloadData()
     }
-    var isDragging: Bool { tableView.isDragging }
-    
-
 
     
 }

@@ -77,7 +77,7 @@ class NotificationsCommentTableViewCell: UITableViewCell {
         label.text = nil
         dateLabel.text = nil
     }
-    public func configure(with postFileName: String, model: Notification) {
+    public func configure(with postFileName: String, model: Notifications) {
         postId = postFileName
         postThumbnailImageView.image = UIImage(named: "dog1")
         label.text = model.text

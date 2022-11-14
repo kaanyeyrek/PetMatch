@@ -112,7 +112,7 @@ class NotificationsUserTableViewCell: UITableViewCell {
         followButton.layer.borderWidth = 0
     }
 
-    public func configure(with username: String, model: Notification) {
+    public func configure(with username: String, model: Notifications) {
         self.username = username
         dateLabel.text = .date(with: model.date)
         label.text = model.text

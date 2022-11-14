@@ -40,7 +40,7 @@ class HomeViewController: UIViewController, CardSliderDataSource {
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
-    
+
     private let privacyButton: UIButton = {
         let button = UIButton()
         button.setTitle("Privacy Policy", for: .normal)

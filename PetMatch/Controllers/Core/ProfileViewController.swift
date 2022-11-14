@@ -103,7 +103,8 @@ extension ProfileViewController: UICollectionViewDelegate, UICollectionViewDataS
               let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: ProfileHeaderCollectionReusableView.identifier, for: indexPath) as? ProfileHeaderCollectionReusableView else {
             return UICollectionReusableView()
         }
-        header.backgroundColor = .systemRed
+        let headerModel = ProfileHeaderModel(avatarImage: nil, followers: 10, following: 15, isFollowing: true)
+        header.configure(with: headerModel)
         return header
     }
     

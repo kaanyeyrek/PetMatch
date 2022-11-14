@@ -26,6 +26,8 @@
 		CE6D5139291A815B00FD27F8 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6D5138291A815B00FD27F8 /* UserModel.swift */; };
 		CE7171E42919775F00E22326 /* NotificationsCommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7171E32919775F00E22326 /* NotificationsCommentTableViewCell.swift */; };
 		CE7CDBF42916809500D85435 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7CDBF32916809500D85435 /* CustomButton.swift */; };
+		CE9694CA292239CE003577AF /* ProfileHeaderCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9694C9292239CE003577AF /* ProfileHeaderCollectionViewModel.swift */; };
+		CE9694CF29227BF8003577AF /* ProfileHeaderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9694CE29227BF8003577AF /* ProfileHeaderModel.swift */; };
 		CEA4DF2F291BC950002759F6 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA4DF2E291BC950002759F6 /* ProfileViewController.swift */; };
 		CEDDD06C291AA92300724275 /* ProfileHeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDDD06B291AA92300724275 /* ProfileHeaderCollectionReusableView.swift */; };
 		CEDDD06F291AB8E100724275 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDDD06E291AB8E100724275 /* SettingsViewController.swift */; };
@@ -56,6 +58,8 @@
 		CE6D5138291A815B00FD27F8 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		CE7171E32919775F00E22326 /* NotificationsCommentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsCommentTableViewCell.swift; sourceTree = "<group>"; };
 		CE7CDBF32916809500D85435 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		CE9694C9292239CE003577AF /* ProfileHeaderCollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderCollectionViewModel.swift; sourceTree = "<group>"; };
+		CE9694CE29227BF8003577AF /* ProfileHeaderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderModel.swift; sourceTree = "<group>"; };
 		CEA4DF2E291BC950002759F6 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		CEDDD06B291AA92300724275 /* ProfileHeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderCollectionReusableView.swift; sourceTree = "<group>"; };
 		CEDDD06E291AB8E100724275 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
@@ -164,6 +168,7 @@
 				CE0FD2652917BC42003C1CA2 /* NotificationModel.swift */,
 				CE6D5136291A794300FD27F8 /* PostModel.swift */,
 				CE6D5138291A815B00FD27F8 /* UserModel.swift */,
+				CE9694CE29227BF8003577AF /* ProfileHeaderModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -202,6 +207,7 @@
 			children = (
 				CEDDD074291AD6FD00724275 /* PostCollectionViewCell.swift */,
 				CEDDD06B291AA92300724275 /* ProfileHeaderCollectionReusableView.swift */,
+				CE9694C9292239CE003577AF /* ProfileHeaderCollectionViewModel.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -328,7 +334,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE9694CF29227BF8003577AF /* ProfileHeaderModel.swift in Sources */,
 				CEDDD075291AD6FD00724275 /* PostCollectionViewCell.swift in Sources */,
+				CE9694CA292239CE003577AF /* ProfileHeaderCollectionViewModel.swift in Sources */,
 				CE6D5137291A794300FD27F8 /* PostModel.swift in Sources */,
 				CEA4DF2F291BC950002759F6 /* ProfileViewController.swift in Sources */,
 				CE0CF71329143337007097D8 /* MessagesViewController.swift in Sources */,

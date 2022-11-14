@@ -5,7 +5,6 @@
 //  Created by Kaan Yeyrek on 11/12/22.
 //
 
-
 import Foundation
 
 protocol NotificationsViewModelInterface {
@@ -15,26 +14,23 @@ protocol NotificationsViewModelInterface {
     func didTapRefresh()
     func didSelectItemAt(at indexPath: IndexPath)
     func commitEditingStyle(at indexPath: IndexPath)
+    func getNotifications(at indexPath: IndexPath) -> Notifications
     var numbersOfRowsInSection: Int { get }
     var heightForRowAt: CGFloat { get }
-  
 }
+
 final class NotificationsViewModel {
     weak var view: NotificationsInterface?
-    var notification: [Notification] = [Notification]()
-    private var shouldNeedToCallPulledDownRefreshControl = true
-   
-
-
-     func fetchNotifications() {
-         view?.beginRefreshing()
-         DatabaseManager.shared.getNotifications { [weak self] notifications in
-             self?.notification = notifications
-             self?.view?.reloadData()
-             self?.view?.endRefreshing()
-         }
-     }
-
+    var notifications: [Notifications] = []
+    
+    func fetchNotifications() {
+        view?.beginRefreshing()
+        DatabaseManager.shared.getNotifications { [weak self] notifications in
+            self?.notifications = notifications
+            self?.view?.reloadData()
+            self?.view?.endRefreshing()
+        }
+    }
 }
 
 extension NotificationsViewModel: NotificationsViewModelInterface {
@@ -43,39 +39,32 @@ extension NotificationsViewModel: NotificationsViewModelInterface {
         view?.prepareTableView()
         view?.setupLayout()
         fetchNotifications()
-        
-      
-        
-        
-        
     }
-    
+
     func viewWillAppear() {
         view?.prepareRefreshControl(with: .label)
     }
 
     func didTapRefresh() {
-        guard let isDraggin = view?.isDragging, !isDraggin else {
-            shouldNeedToCallPulledDownRefreshControl = true
-            return
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+            self.fetchNotifications()
         }
-        fetchNotifications()
     }
 
     func didSelectItemAt(at indexPath: IndexPath) {
-        print("tapped")
+        print("tapped index")
     }
+
     func commitEditingStyle(at indexPath: IndexPath) {
-        notification.remove(at: indexPath.row)
+        notifications.remove(at: indexPath.row)
     }
-    var numbersOfRowsInSection: Int { notification.count }
+
+    var numbersOfRowsInSection: Int { notifications.count }
     var heightForRowAt: CGFloat { 70 }
+    func getNotifications(at indexPath: IndexPath) -> Notifications {
+        return notifications[indexPath.row]
+    }
 }
 
-
-
-
-
-    
     
 

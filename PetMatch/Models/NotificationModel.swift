@@ -25,7 +25,7 @@ enum NotificationType {
     
 }
 // Notification Model
-class Notification {
+class Notifications {
     var identifier = UUID().uuidString
     var text: String
     var date: Date
@@ -37,15 +37,15 @@ class Notification {
         self.type = type
     }
 // Mock Data
-    static func mockData() -> [Notification] {
+    static func mockData() -> [Notifications] {
         let first = Array(0...10).compactMap({
-            Notification(text: "Something happened: \($0)", date: Date(), type: .userFollow(username: "kaanyeyrek"))
+            Notifications(text: "Something happened: \($0)", date: Date(), type: .userFollow(username: "kaanyeyrek"))
         })
         let second =  Array(0...10).compactMap({
-            Notification(text: "Something happened: \($0)", date: Date(), type: .postLike(postName: "victoria"))
+            Notifications(text: "Something happened: \($0)", date: Date(), type: .postLike(postName: "victoria"))
         })
         let third = Array(0...10).compactMap({
-            Notification(text: "Something happened: \($0)", date: Date(), type: .postComment(postName: "shakira"))
+            Notifications(text: "Something happened: \($0)", date: Date(), type: .postComment(postName: "shakira"))
         })
         return first + second + third
     }
