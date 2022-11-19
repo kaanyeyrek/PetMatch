@@ -12,6 +12,8 @@ protocol ProfileHeaderCollectionInterface: AnyObject {
     func setupUI()
     func layout()
     func configure(with model: ProfileHeaderModel)
+    func avatarTapGesture()
+    func actionSetup()
     
 }
 
@@ -72,18 +74,12 @@ class ProfileHeaderCollectionReusableView: UICollectionReusableView {
         super.init(frame: frame)
         viewModel.view = self
         viewModel.overrideinit()
-        actionSetup()
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     //MARK: - Actions
-    func actionSetup() {
-        followersButton.addTarget(self, action: #selector(didTapFollowersButton), for: .touchUpInside)
-        followingButton.addTarget(self, action: #selector(didTapFollowingButton), for: .touchUpInside)
-        primaryButton.addTarget(self, action: #selector(didTapPrimaryButton), for: .touchUpInside)
-    }
     @objc private func didTapFollowersButton() {
         viewModel.didTapFollowersButton()
     }
@@ -92,6 +88,9 @@ class ProfileHeaderCollectionReusableView: UICollectionReusableView {
     }
     @objc private func didTapPrimaryButton() {
         viewModel.didTapPrimaryButton()
+    }
+    @objc private func didTapAvatar() {
+        viewModel.didTapAvatar()
     }
     
 }
@@ -135,10 +134,10 @@ extension ProfileHeaderCollectionReusableView: ProfileHeaderCollectionInterface 
         ])
     }
    
-  //MARK: - Configure for header cell
+    // Configure model for header cell
     func configure(with model: ProfileHeaderModel) {
         followersButton.setTitle("\(model.followers)\nFollowers", for: .normal)
-        followingButton.setTitle("\(model.following)\nFollowers", for: .normal)
+        followingButton.setTitle("\(model.following)\nFollowing", for: .normal)
         // SDWebImage avatarURL
         if let avatarURL = model.avatarImage {
             avatarImageView.sd_setImage(with: avatarURL, completed: nil)
@@ -152,10 +151,21 @@ extension ProfileHeaderCollectionReusableView: ProfileHeaderCollectionInterface 
             )
 
         } else {
-            primaryButton.setTitleColor(.white , for: .normal)
+            primaryButton.setTitleColor(.white, for: .normal)
             primaryButton.backgroundColor = .secondarySystemBackground
             primaryButton.setTitle("Edit Profile", for: .normal)
         }
+    }
+    func avatarTapGesture() {
+        let gesture = UITapGestureRecognizer(target: self, action: #selector(didTapAvatar))
+        avatarImageView.isUserInteractionEnabled = true
+        avatarImageView.addGestureRecognizer(gesture)
+    }
+
+    func actionSetup() {
+        followersButton.addTarget(self, action: #selector(didTapFollowersButton), for: .touchUpInside)
+        followingButton.addTarget(self, action: #selector(didTapFollowingButton), for: .touchUpInside)
+        primaryButton.addTarget(self, action: #selector(didTapPrimaryButton), for: .touchUpInside)
     }
 
 }

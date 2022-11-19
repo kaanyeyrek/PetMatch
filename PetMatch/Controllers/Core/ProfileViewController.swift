@@ -38,6 +38,7 @@ class ProfileViewController: UIViewController {
         super.viewDidLoad()
         title = user.userName.lowercased()
         view.backgroundColor = .systemBackground
+     
         view.addSubview(collectionView)
         collectionView.delegate = self
         collectionView.dataSource = self
@@ -103,7 +104,7 @@ extension ProfileViewController: UICollectionViewDelegate, UICollectionViewDataS
               let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: ProfileHeaderCollectionReusableView.identifier, for: indexPath) as? ProfileHeaderCollectionReusableView else {
             return UICollectionReusableView()
         }
-        let headerModel = ProfileHeaderModel(avatarImage: nil, followers: 10, following: 15, isFollowing: true)
+        let headerModel = ProfileHeaderModel(avatarImage: nil, followers: 105, following: 75, isFollowing: true)
         header.configure(with: headerModel)
         return header
     }

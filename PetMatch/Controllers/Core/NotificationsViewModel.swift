@@ -60,7 +60,7 @@ extension NotificationsViewModel: NotificationsViewModelInterface {
     }
 
     var numbersOfRowsInSection: Int { notifications.count }
-    var heightForRowAt: CGFloat { 70 }
+    var heightForRowAt: CGFloat { 85 }
     func getNotifications(at indexPath: IndexPath) -> Notifications {
         return notifications[indexPath.row]
     }

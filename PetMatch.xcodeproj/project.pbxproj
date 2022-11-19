@@ -25,13 +25,23 @@
 		CE6D5137291A794300FD27F8 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6D5136291A794300FD27F8 /* PostModel.swift */; };
 		CE6D5139291A815B00FD27F8 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6D5138291A815B00FD27F8 /* UserModel.swift */; };
 		CE7171E42919775F00E22326 /* NotificationsCommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7171E32919775F00E22326 /* NotificationsCommentTableViewCell.swift */; };
-		CE7CDBF42916809500D85435 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7CDBF32916809500D85435 /* CustomButton.swift */; };
+		CE74D9EC2924E11F00A5F7EF /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE74D9EB2924E11F00A5F7EF /* AuthManager.swift */; };
+		CE74D9EE2924E59800A5F7EF /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE74D9ED2924E59800A5F7EF /* OnboardingViewModel.swift */; };
+		CE8A2ED92925FCFB007833FE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8A2ED82925FCFB007833FE /* LoginViewController.swift */; };
+		CE8A2EDB2925FD0C007833FE /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8A2EDA2925FD0C007833FE /* RegisterViewController.swift */; };
+		CE8A2EDD29269010007833FE /* ThemeColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8A2EDC29269010007833FE /* ThemeColor.swift */; };
+		CE8A2EE129269819007833FE /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8A2EE029269819007833FE /* LoginViewModel.swift */; };
 		CE9694CA292239CE003577AF /* ProfileHeaderCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9694C9292239CE003577AF /* ProfileHeaderCollectionViewModel.swift */; };
 		CE9694CF29227BF8003577AF /* ProfileHeaderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9694CE29227BF8003577AF /* ProfileHeaderModel.swift */; };
+		CE9694D12922AB8C003577AF /* PostCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9694D02922AB8C003577AF /* PostCollectionViewModel.swift */; };
 		CEA4DF2F291BC950002759F6 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA4DF2E291BC950002759F6 /* ProfileViewController.swift */; };
+		CEBF23B5292412F900E9FA79 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBF23B4292412F900E9FA79 /* OnboardingViewController.swift */; };
 		CEDDD06C291AA92300724275 /* ProfileHeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDDD06B291AA92300724275 /* ProfileHeaderCollectionReusableView.swift */; };
 		CEDDD06F291AB8E100724275 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDDD06E291AB8E100724275 /* SettingsViewController.swift */; };
 		CEDDD075291AD6FD00724275 /* PostCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDDD074291AD6FD00724275 /* PostCollectionViewCell.swift */; };
+		CEE4F86329279B9900052329 /* Authfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE4F86229279B9900052329 /* Authfield.swift */; };
+		CEE4F86529279F7E00052329 /* AuthButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE4F86429279F7E00052329 /* AuthButton.swift */; };
+		CEE4F8672927C98100052329 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE4F8662927C98100052329 /* RegisterViewModel.swift */; };
 		CEF8CFD629190E310023D61C /* NotificationsPostLikeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF8CFD529190E310023D61C /* NotificationsPostLikeTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -57,13 +67,23 @@
 		CE6D5136291A794300FD27F8 /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
 		CE6D5138291A815B00FD27F8 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		CE7171E32919775F00E22326 /* NotificationsCommentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsCommentTableViewCell.swift; sourceTree = "<group>"; };
-		CE7CDBF32916809500D85435 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		CE74D9EB2924E11F00A5F7EF /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		CE74D9ED2924E59800A5F7EF /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
+		CE8A2ED82925FCFB007833FE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		CE8A2EDA2925FD0C007833FE /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		CE8A2EDC29269010007833FE /* ThemeColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeColor.swift; sourceTree = "<group>"; };
+		CE8A2EE029269819007833FE /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		CE9694C9292239CE003577AF /* ProfileHeaderCollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderCollectionViewModel.swift; sourceTree = "<group>"; };
 		CE9694CE29227BF8003577AF /* ProfileHeaderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderModel.swift; sourceTree = "<group>"; };
+		CE9694D02922AB8C003577AF /* PostCollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCollectionViewModel.swift; sourceTree = "<group>"; };
 		CEA4DF2E291BC950002759F6 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		CEBF23B4292412F900E9FA79 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		CEDDD06B291AA92300724275 /* ProfileHeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderCollectionReusableView.swift; sourceTree = "<group>"; };
 		CEDDD06E291AB8E100724275 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		CEDDD074291AD6FD00724275 /* PostCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCollectionViewCell.swift; sourceTree = "<group>"; };
+		CEE4F86229279B9900052329 /* Authfield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authfield.swift; sourceTree = "<group>"; };
+		CEE4F86429279F7E00052329 /* AuthButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthButton.swift; sourceTree = "<group>"; };
+		CEE4F8662927C98100052329 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
 		CEF8CFD529190E310023D61C /* NotificationsPostLikeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsPostLikeTableViewCell.swift; sourceTree = "<group>"; };
 		DDB6F14417789E1FEC2842AE /* Pods_PetMatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PetMatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -178,7 +198,9 @@
 			children = (
 				CE7171E5291982F600E22326 /* Notifications */,
 				CEDDD06A291AA8CF00724275 /* Profile */,
-				CE7CDBF32916809500D85435 /* CustomButton.swift */,
+				CE8A2EDC29269010007833FE /* ThemeColor.swift */,
+				CEE4F86229279B9900052329 /* Authfield.swift */,
+				CEE4F86429279F7E00052329 /* AuthButton.swift */,
 				CE0CF703291431B3007097D8 /* LaunchScreen.storyboard */,
 			);
 			path = Views;
@@ -188,6 +210,7 @@
 			isa = PBXGroup;
 			children = (
 				CE0FD26C29181C3C003C1CA2 /* DatabaseManager.swift */,
+				CE74D9EB2924E11F00A5F7EF /* AuthManager.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -206,6 +229,7 @@
 			isa = PBXGroup;
 			children = (
 				CEDDD074291AD6FD00724275 /* PostCollectionViewCell.swift */,
+				CE9694D02922AB8C003577AF /* PostCollectionViewModel.swift */,
 				CEDDD06B291AA92300724275 /* ProfileHeaderCollectionReusableView.swift */,
 				CE9694C9292239CE003577AF /* ProfileHeaderCollectionViewModel.swift */,
 			);
@@ -216,6 +240,12 @@
 			isa = PBXGroup;
 			children = (
 				CEDDD06E291AB8E100724275 /* SettingsViewController.swift */,
+				CEBF23B4292412F900E9FA79 /* OnboardingViewController.swift */,
+				CE74D9ED2924E59800A5F7EF /* OnboardingViewModel.swift */,
+				CE8A2ED82925FCFB007833FE /* LoginViewController.swift */,
+				CE8A2EE029269819007833FE /* LoginViewModel.swift */,
+				CE8A2EDA2925FD0C007833FE /* RegisterViewController.swift */,
+				CEE4F8662927C98100052329 /* RegisterViewModel.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -334,18 +364,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEE4F86329279B9900052329 /* Authfield.swift in Sources */,
+				CE8A2ED92925FCFB007833FE /* LoginViewController.swift in Sources */,
 				CE9694CF29227BF8003577AF /* ProfileHeaderModel.swift in Sources */,
 				CEDDD075291AD6FD00724275 /* PostCollectionViewCell.swift in Sources */,
+				CEE4F8672927C98100052329 /* RegisterViewModel.swift in Sources */,
 				CE9694CA292239CE003577AF /* ProfileHeaderCollectionViewModel.swift in Sources */,
+				CE74D9EC2924E11F00A5F7EF /* AuthManager.swift in Sources */,
+				CE74D9EE2924E59800A5F7EF /* OnboardingViewModel.swift in Sources */,
 				CE6D5137291A794300FD27F8 /* PostModel.swift in Sources */,
 				CEA4DF2F291BC950002759F6 /* ProfileViewController.swift in Sources */,
 				CE0CF71329143337007097D8 /* MessagesViewController.swift in Sources */,
+				CE9694D12922AB8C003577AF /* PostCollectionViewModel.swift in Sources */,
 				CE0FD26D29181C3C003C1CA2 /* DatabaseManager.swift in Sources */,
 				CEF8CFD629190E310023D61C /* NotificationsPostLikeTableViewCell.swift in Sources */,
 				CEDDD06F291AB8E100724275 /* SettingsViewController.swift in Sources */,
-				CE7CDBF42916809500D85435 /* CustomButton.swift in Sources */,
 				CE0FD26A2917D013003C1CA2 /* Extension.swift in Sources */,
+				CEBF23B5292412F900E9FA79 /* OnboardingViewController.swift in Sources */,
 				CE59127F291505FE004BE613 /* CardItem.swift in Sources */,
+				CE8A2EE129269819007833FE /* LoginViewModel.swift in Sources */,
 				CE6D5139291A815B00FD27F8 /* UserModel.swift in Sources */,
 				CE7171E42919775F00E22326 /* NotificationsCommentTableViewCell.swift in Sources */,
 				CE0FD2682917C9E9003C1CA2 /* NotificationsUserTableViewCell.swift in Sources */,
@@ -353,10 +390,13 @@
 				CE2808F1291FA52D000BD3DF /* NotificationsViewModel.swift in Sources */,
 				CE0CF70D291431F6007097D8 /* TabBarViewController.swift in Sources */,
 				CE0CF6FD291431B3007097D8 /* HomeViewController.swift in Sources */,
+				CEE4F86529279F7E00052329 /* AuthButton.swift in Sources */,
 				CEDDD06C291AA92300724275 /* ProfileHeaderCollectionReusableView.swift in Sources */,
 				CE0CF6F9291431B3007097D8 /* AppDelegate.swift in Sources */,
 				CE0FD2662917BC42003C1CA2 /* NotificationModel.swift in Sources */,
 				CE0CF6FB291431B3007097D8 /* SceneDelegate.swift in Sources */,
+				CE8A2EDB2925FD0C007833FE /* RegisterViewController.swift in Sources */,
+				CE8A2EDD29269010007833FE /* ThemeColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -499,10 +539,12 @@
 				DEVELOPMENT_TEAM = T35TLF5PUQ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PetMatch/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Please allow access to take a profile picture.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Please allow access to select a photo for your profile.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -528,10 +570,12 @@
 				DEVELOPMENT_TEAM = T35TLF5PUQ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PetMatch/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Please allow access to take a profile picture.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Please allow access to select a photo for your profile.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

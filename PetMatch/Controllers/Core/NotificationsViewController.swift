@@ -124,6 +124,7 @@ extension NotificationsViewController: NotificationsInterface {
         navigationController?.navigationBar.isHidden = true
         view.addSubview(tableView)
         view.backgroundColor = .systemBackground
+        
     }
 
     func setupLayout() {

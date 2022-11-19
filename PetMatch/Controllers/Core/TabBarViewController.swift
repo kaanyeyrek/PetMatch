@@ -14,7 +14,7 @@ class TabBarViewController: UITabBarController {
     }
 // UITabBarItem VC Settings
     private func setupVC() {
-        let home = HomeViewController()
+        let home = LoginViewController()
         let notifications = NotificationsViewController()
         let messages = MessagesViewController()
         let profile = ProfileViewController(user: UserModel(userName: "victoria", profilePictureURL: nil, identifier: UUID().uuidString))

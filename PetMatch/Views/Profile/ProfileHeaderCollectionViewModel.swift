@@ -12,11 +12,12 @@ protocol ProfileHeaderCollectionViewModelInterface {
     func didTapFollowersButton()
     func didTapFollowingButton()
     func didTapPrimaryButton()
+    func didTapAvatar()
 }
 
 final class ProfileHeaderCollectionViewModel {
     weak var view: ProfileHeaderCollectionInterface?
-    var model : ProfileHeaderModel?
+    var model: ProfileHeaderModel?
 }
 
 extension ProfileHeaderCollectionViewModel: ProfileHeaderCollectionViewModelInterface {
@@ -24,7 +25,8 @@ extension ProfileHeaderCollectionViewModel: ProfileHeaderCollectionViewModelInte
     func overrideinit() {
         view?.setupUI()
         view?.layout()
-        
+        view?.actionSetup()
+        view?.avatarTapGesture()
     }
     func didTapFollowersButton() {
         print("tapped followers")
@@ -37,6 +39,8 @@ extension ProfileHeaderCollectionViewModel: ProfileHeaderCollectionViewModelInte
     func didTapPrimaryButton() {
         print("tapped primary")
     }
-    
+    func didTapAvatar() {
+        print("tapped avatar")
+    }
    
 }

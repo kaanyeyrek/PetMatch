@@ -62,10 +62,21 @@ class HomeViewController: UIViewController, CardSliderDataSource {
 
     private var data = [CardItem]()
 //MARK: - LifeCycle
+//Onboarding Flow
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        tabBarController?.tabBar.isHidden = false
+        navigationController?.navigationBar.isHidden = true
+        if AuthManager.shared.isNewUser() {
+            let vc = OnboardingViewController()
+            vc.modalPresentationStyle = .fullScreen
+            navigationController?.pushViewController(vc, animated: true)
+        }
+       
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
-        navigationController?.navigationBar.isHidden = true
         setupData()
         setupButton()
         setupLayout()
